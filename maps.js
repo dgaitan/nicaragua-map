@@ -2,9 +2,11 @@ $(document).ready(function(){
 	$.get('maps/nicaragua-data.json', function(data){
 		var mapas = data;
 		var keys = [{
+				drilldown: 'chinandega',
                 'hc-key': 'ni-ci',
                 value: 0
             }, {
+            	drilldown: 'leon',
                 'hc-key': 'ni-le',
                 value: 1
             }, {
@@ -20,39 +22,51 @@ $(document).ready(function(){
                 'hc-key': 'ni-ca',
                 value: 4
             }, {
+            	drilldown: 'granada',
                 'hc-key': 'ni-gr',
                 value: 5
             }, {
+            	drilldown: 'rio-san-juan',
                 'hc-key': 'ni-6330',
                 value: 6
             }, {
+            	drilldown: 'rivas',
                 'hc-key': 'ni-224',
                 value: 7
             }, {
+            	drilldown: 'chontales',
                 'hc-key': 'ni-co',
                 value: 8
             }, {
+            	drilldown: 'boaco',
                 'hc-key': 'ni-bo',
                 value: 9
             }, {
+            	drilldown: 'matagalpa',
                 'hc-key': 'ni-mt',
                 value: 10
             }, {
+            	drilldown: 'esteli',
                 'hc-key': 'ni-es',
                 value: 11
             }, {
+            	drilldown: 'nueva-segovia',
                 'hc-key': 'ni-ns',
                 value: 12
             }, {
+            	drilldown: 'jinotega',
                 'hc-key': 'ni-ji',
                 value: 13
             }, {
+            	drilldown: 'raan',
                 'hc-key': 'ni-an',
                 value: 14
             }, {
+            	drilldown: 'raas',
                 'hc-key': 'ni-as',
                 value: 15
             }, {
+            	drilldown: 'madriz',
                 'hc-key': 'ni-md',
                 value: 17
             }];
