@@ -4,43 +4,43 @@ $(document).ready(function(){
 		var keys = [{
 				drilldown: 'chinandega',
                 'hc-key': 'ni-ci',
-                value: 0
+                value: 10
             }, {
             	drilldown: 'leon',
                 'hc-key': 'ni-le',
-                value: 1
+                value: 50
             }, {
             	drilldown: 'managua',
                 'hc-key': 'ni-mn',
-                value: 2
+                value: 25
             }, {
             	drilldown: 'masaya',
                 'hc-key': 'ni-ms',
-                value: 3
+                value: 70
             }, {
             	drilldown: 'carazo',
                 'hc-key': 'ni-ca',
-                value: 4
+                value: 40
             }, {
             	drilldown: 'granada',
                 'hc-key': 'ni-gr',
-                value: 5
+                value: 10
             }, {
             	drilldown: 'rio-san-juan',
-                'hc-key': 'ni-6330',
-                value: 6
+                'hc-key': 'ni-rio',
+                value: 60
             }, {
             	drilldown: 'rivas',
-                'hc-key': 'ni-224',
-                value: 7
+                'hc-key': 'ni-rivas',
+                value: 70
             }, {
             	drilldown: 'chontales',
                 'hc-key': 'ni-co',
-                value: 8
+                value: 80
             }, {
             	drilldown: 'boaco',
                 'hc-key': 'ni-bo',
-                value: 9
+                value: 90
             }, {
             	drilldown: 'matagalpa',
                 'hc-key': 'ni-mt',
@@ -52,18 +52,18 @@ $(document).ready(function(){
             }, {
             	drilldown: 'nueva-segovia',
                 'hc-key': 'ni-ns',
-                value: 12
+                value: 20
             }, {
             	drilldown: 'jinotega',
                 'hc-key': 'ni-ji',
-                value: 13
+                value: 30
             }, {
             	drilldown: 'raan',
-                'hc-key': 'ni-an',
-                value: 14
+                'hc-key': 'ni-raan',
+                value: 90
             }, {
             	drilldown: 'raas',
-                'hc-key': 'ni-as',
+                'hc-key': 'ni-raas',
                 value: 15
             }, {
             	drilldown: 'madriz',
@@ -75,11 +75,12 @@ $(document).ready(function(){
         	series: [{
         		data: keys,
         		joinBy: 'hc-key',
-        		mapData: Highcharts.maps['countries/ni/ni-all'],
-        		name: 'Nicaragua',
+        		//mapData: Highcharts.maps['countries/ni/ni-all'],
+        		mapData: Highcharts.maps.nicaragua,
+                name: 'Nicaragua',
         		dataLables: {
         			enabled: true,
-        			format: '{point.properties.postal-code}'
+        			format: '{this.data.name}'
         		}
         	}],
         	drilldown: {
@@ -116,6 +117,11 @@ $(document).ready(function(){
         			}
         		}
         	},
+            colorAxis: {
+                min: 0,
+                minColor: '#99DAFF',
+                maxColor: '#569CC4'
+            },
         });
 	});
 });
