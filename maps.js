@@ -72,7 +72,7 @@ $(document).ready(function(){
         },
         series: [{
             data: test,
-            name: 'USA',
+            name: 'NIC',
             dataLabels: {
                 enabled: true,
                 format: '{point.name}'
