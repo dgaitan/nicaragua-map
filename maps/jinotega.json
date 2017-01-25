@@ -1,6 +1,7 @@
 {
 		"id":"jinotega",
 		"type": "map",
+		"id": 10,
 		"data": [
 			{
 				"name": "San Rafael del Norte",

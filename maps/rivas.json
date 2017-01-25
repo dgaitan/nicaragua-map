@@ -1,6 +1,7 @@
 {
 		"id":"rivas",
 		"type": "map",
+		"key": 80,
 		"data": [
 			{
 				"name": "Potosi",
